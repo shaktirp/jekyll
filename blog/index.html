@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Blog"
+description: "archive"
+active: Blog
+---
+
+<section>
+  <div>
+    <ul>
+      {% for post in site.categories.blog %}
+        <li class="text-center">
+          <h3>
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              {{ post.title }}
+            </a>
+          </h3>
+          <div>
+            {{ post.subtitle }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

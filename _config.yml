@@ -1,0 +1,17 @@
+# Site settings
+title: Shakti Rajpurohit
+shortTitle: SR
+tagline: "Changing the world, one uninspired quote at a time"
+url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+# Contact
+phone: "" # This is my real number. You should text me.
+email: "" # This is my real email address. Please don't email me.
+
+# Internal nav
+nav:
+  # - Blog: "/blog/"
+  - Projects: "/projects/"
+  # - About: "/about/"
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
