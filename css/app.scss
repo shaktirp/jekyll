@@ -1,0 +1,104 @@
+---
+---
+
+/*
+*******
+None of these variable are being imported anywhere, they're just here for your convenience.
+*******
+*/
+
+body{
+	margin: 0;
+}
+
+// Some Style Variables
+$primary-color: #36465f;
+$secondary-color: #464646;
+$error: #de3535;
+$success: #d5f5d7;
+
+$max-width: 960px;
+
+// Breakpoints. Use these in your media queries.
+$babybear: 321px;
+$mamabear: 769px;
+$papabear: 1140px;
+$monsterbear: 1300px;
+
+$font-size: 16px;
+$font-family: Helvetica, sans-serif;
+$alt-font-family: monospace;
+$font-color: #353535;
+
+// Overriding existing
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+img {
+	width: 100%;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+	color: #337ab7;
+	margin: 0 0 10px 0
+}
+
+.container {
+	width: 700px
+}
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+// Common classes
+.justify-center {
+	display: flex;
+	justify-content: center;
+}
+
+.text-center {
+	text-align: center
+}
+
+// Nav
+.header {
+	padding: 30px 0;
+	border-bottom: 1px solid #e5e5e5;
+	display: flex;  justify-content: space-between;
+	align-items: center;
+}
+
+.header h2 {
+	margin-bottom: 0
+}
+
+.nav>li>a.active {  text-decoration: none;  background-color: #eee;
+}
+
+.nav-pills>li>a {
+	text-transform: uppercase;
+}
+
+// Main content
+.main-content {
+	padding: 30px 0
+}
+
+// Footer content
+footer {
+	padding: 30px 0;
+	border-top: 1px solid #e5e5e5;
+}
+
+// Project page
+.project-items {
+	margin-bottom: 20px
+}
+
+.project-items:last-child {
+	margin-bottom: 0
+}

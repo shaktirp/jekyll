@@ -12,7 +12,7 @@ email: "" # This is my real email address. Please don't email me.
 # Internal nav
 nav:
   # - Blog: "/blog/"
-  - Projects: "/jekyll/projects/"
+  - Projects: "/projects/"
   # - About: "/about/"
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

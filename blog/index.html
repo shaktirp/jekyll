@@ -11,7 +11,7 @@ active: Blog
       {% for post in site.categories.blog %}
         <li class="text-center">
           <h3>
-            <a href="{{ post.url | prepend: site.baseurl }}">
+            <a href="{{ post.url | prepend: site.baseUrl }}">
               {{ post.title }}
             </a>
           </h3>
