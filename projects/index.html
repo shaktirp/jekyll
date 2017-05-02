@@ -6,18 +6,25 @@ active: Projects
 ---
 
 <section>
-  <div>
+  <div class="text-container">
     <ul>
       {% for post in site.categories.projects %}
         <li class="project-items">
-          <h3>
+          <div class="projects-container" style="background-image: url(/gallery/projects/{{ post.image.folder }}/{{ post.image.feature }})">
+            <a href="{{ post.url | prepend: site.baseUrl }}">
+              <div class="projects-link-box">
+                <h3>{{ post.title }}</h3>
+              </div>
+            </a>
+          </div>
+          <!-- <h3>
             <a href="{{ post.url | prepend: site.baseUrl }}">
               {{ post.title }}
             </a>
           </h3>
           <div>
             {{ post.subtitle }}
-          </div>
+          </div> -->
         </li>
       {% endfor %}
     </ul>
