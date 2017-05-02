@@ -20,6 +20,6 @@ Content of your post HERE
 
 Add as many paragraphs amongst your galleries as you want
 
-![alt text](/gallery/projects/project01/bg1.jpg "Logo Title Text 1")
-![alt text](/gallery/projects/project01/bg2.jpg "Logo Title Text 2")
-![alt text](/gallery/projects/project01/bg3.jpg "Logo Title Text 3")
+![alt text](/jekyll/gallery/projects/project01/bg1.jpg "Logo Title Text 1")
+![alt text](/jekyll/gallery/projects/project01/bg2.jpg "Logo Title Text 2")
+![alt text](/jekyll/gallery/projects/project01/bg3.jpg "Logo Title Text 3")

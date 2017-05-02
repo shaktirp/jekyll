@@ -10,7 +10,7 @@ active: Projects
     <ul>
       {% for post in site.categories.projects %}
         <li class="project-items">
-          <div class="projects-container" style="background-image: url(/gallery/projects/{{ post.image.folder }}/{{ post.image.feature }})">
+          <div class="projects-container" style="background-image: url({{ site.baseUrl }}/gallery/projects/{{ post.image.folder }}/{{ post.image.feature }})">
             <a href="{{ post.url | prepend: site.baseUrl }}">
               <div class="projects-link-box">
                 <h3>{{ post.title }}</h3>
