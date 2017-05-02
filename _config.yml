@@ -1,9 +1,9 @@
 # Site settings
 title: Shakti Rajpurohit
 shortTitle: SR
-tagline: "Changing the world, one uninspired quote at a time"
+tagline: "Hi, I'm Shakti. I am an Application Developer at Zendesk."
 url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
-baseUrl: "/jekyll"
+baseUrl: ""
 
 # Contact
 phone: "" # This is my real number. You should text me.
@@ -11,8 +11,11 @@ email: "" # This is my real email address. Please don't email me.
 
 # Internal nav
 nav:
-  # - Blog: "/blog/"
   - Projects: "/projects/"
-  # - About: "/about/"
+  - Gallery: "/gallery/"
+
+social:
+  - Facebook: "www.facebook.com"
+  - LinkedIn: "www.linkedin.com"
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

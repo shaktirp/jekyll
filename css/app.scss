@@ -13,11 +13,14 @@ body{
 
 // Some Style Variables
 $primary-color: #36465f;
-$secondary-color: #464646;
+$header-color: #333333;
+$link-color: #337ab7;
+$border-color: #e5e5e5;
 $error: #de3535;
 $success: #d5f5d7;
 
-$max-width: 960px;
+$text-width: 600px;
+$image-container-width: 1000px;
 
 // Breakpoints. Use these in your media queries.
 $babybear: 321px;
@@ -28,7 +31,8 @@ $monsterbear: 1300px;
 $font-size: 16px;
 $font-family: Helvetica, sans-serif;
 $alt-font-family: monospace;
-$font-color: #353535;
+$font-color: #555555;
+$hover-color: #000000;
 
 // Overriding existing
 ul {
@@ -41,13 +45,20 @@ img {
 	width: 100%;
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
-	color: #337ab7;
-	margin: 0 0 10px 0
+.h1, .h2, .h3, h1, h2, h3,
+h1 a, h2 a, h3 a {
+	color: $header-color;
+	margin: 0 0 10px 0;
+	font-weight: 300;
 }
 
 .container {
-	max-width: 700px
+	max-width: $image-container-width
+}
+
+.text-container {
+	max-width: $text-width;
+	margin: 0 auto;
 }
 
 a:hover, a:active {
@@ -67,7 +78,7 @@ a:hover, a:active {
 // Nav
 .header {
 	padding: 30px 0;
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid $border-color;
 	display: flex;  justify-content: space-between;
 	align-items: center;
 }
@@ -76,11 +87,19 @@ a:hover, a:active {
 	margin-bottom: 0
 }
 
-.nav>li>a.active {  text-decoration: none;  background-color: #eee;
+.nav > li > a.active, .nav > li > a:hover {
+	text-decoration: none;
+	font-weight: 400;
+	color: $hover-color;
+	background: #fff;
 }
 
 .nav-pills>li>a {
 	text-transform: uppercase;
+}
+
+.header a {
+	color: $font-color
 }
 
 // Main content
@@ -91,7 +110,12 @@ a:hover, a:active {
 // Footer content
 footer {
 	padding: 30px 0;
-	border-top: 1px solid #e5e5e5;
+	border-top: 1px solid $border-color;
+}
+
+// Home page
+.home-page {
+	padding: 160px 0;
 }
 
 // Project page
