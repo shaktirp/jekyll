@@ -52,6 +52,10 @@ h1 a, h2 a, h3 a {
 	font-weight: 300;
 }
 
+h1 a:hover, h2 a:hover, h3 a:hover {
+	color: $hover-color;
+}
+
 .container {
 	max-width: $image-container-width
 }
@@ -125,4 +129,64 @@ footer {
 
 .project-items:last-child {
 	margin-bottom: 0
+}
+
+.projects-container {
+	height: 300px;
+	width: 100%;
+	background-color: #999;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 30px
+}
+
+.projects-link-box {
+	height: calc(100% - 40px);
+	width: calc(100% - 40px);
+	background-color: #fff;
+	opacity: 0.9;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	display: none;
+}
+
+.projects-container:hover .projects-link-box {
+	display: block;
+}
+
+.projects-link-box h3 {
+	text-align: center;
+  top: 40%;
+  position: relative;
+}
+
+// Project details page
+.project-details {
+	text-align: center
+}
+
+.project-details div, .project-details img {
+	width: $text-width;
+	margin: 0 auto 30px
+}
+
+.project-details img:first-child {
+	margin-top: 30px
+}
+
+// Gallery page
+#instafeed {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#instafeed > div {
+	flex: 1 1 calc(33.33% - 20px);
+  margin: 0 30px 60px 0;
+  max-width: calc(33.33% - 20px);
+}
+
+#instafeed > div:nth-child(3n) {
+	margin-right: 0
 }
