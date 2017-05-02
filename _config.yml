@@ -3,7 +3,7 @@ title: Shakti Rajpurohit
 shortTitle: SR
 tagline: "Hi, I'm Shakti. I am an Application Developer at Zendesk."
 url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
-baseUrl: ""
+baseUrl: "/jekyll"
 
 # Contact
 phone: "" # This is my real number. You should text me.
