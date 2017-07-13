@@ -1,7 +1,7 @@
 # Site settings
 title: Shakti Rajpurohit
 shortTitle: SR
-tagline: "Hi, I'm Shakti. I am an Application Developer at Zendesk."
+tagline: "Hi, I'm Shakti. This site is a Work in progress."
 url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 baseUrl: ""
 
@@ -12,7 +12,6 @@ email: "" # This is my real email address. Please don't email me.
 # Internal nav
 nav:
   - Projects: "/projects/"
-  - Gallery: "/gallery/"
 
 social:
   - Facebook: "www.facebook.com"

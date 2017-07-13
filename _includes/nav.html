@@ -1,16 +1,22 @@
-<h2><a href="{{ site.baseUrl }}/">{{ site.shortTitle }}</a></h2>
-<nav>
-  <ul class="nav nav-pills justify-center">
-  {% for nav_hash in site.nav %}
-    {% for nav_item in nav_hash %}
-    <li class="nav-item">
-      {% if page.active == nav_item[0] %}
-        <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link active">{{ nav_item[0] }}</a>
-      {% else %}
-        <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link">{{ nav_item[0] }}</a>
-      {% endif %}
-    </li>
+<div class="header-inner">
+  <h2>
+    <a href="{{ site.baseUrl }}/" class="logo">
+      {{ site.shortTitle }}
+    </a>
+  </h2>
+  <nav>
+    <ul class="nav nav-pills justify-center">
+    {% for nav_hash in site.nav %}
+      {% for nav_item in nav_hash %}
+      <li class="nav-item">
+        {% if page.active == nav_item[0] %}
+          <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link active">{{ nav_item[0] }}</a>
+        {% else %}
+          <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link">{{ nav_item[0] }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
-  </ul>
-</nav>
+    </ul>
+  </nav>
+</div>
