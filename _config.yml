@@ -1,9 +1,9 @@
 # Site settings
 title: Shakti Rajpurohit
 shortTitle: SR
-tagline: "Hi, I'm Shakti. This site is a Work in progress."
+tagline: "Hi, I'm Shakti. This site is work in progress."
 url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
-baseUrl: "/"
+baseUrl: "jekyll"
 
 # Contact
 phone: "" # This is my real number. You should text me.
