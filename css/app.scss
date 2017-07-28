@@ -11,25 +11,12 @@ body{
 	margin: 0;
 }
 
-// --primary: #99a3e8;
-// --primary-dark: #607cc7;
-// --black: #27303b;
-// --grey: #526173;
-// --grey-light: #a3afbf;
-// --grey-bg: #f5f7f9;
+$text-color: #1D1D1D;
 
 // Some Style Variables
-$primary-color: #36465f;
-$header-color: #333333;
-$link-color: #337ab7;
-$border-color: #e5e5e5;
-$error: #de3535;
-$success: #d5f5d7;
-$background-primary: #70B9B0;
 
-$text-width: 600px;
-$image-container-width: 1000px;
-$container-width: 1000px;
+$text-width: 700px;
+$container-width: 1160px;
 
 // Breakpoints. Use these in your media queries.
 $babybear: 321px;
@@ -44,29 +31,27 @@ $font-color: #555555;
 $hover-color: #000000;
 
 // Overriding existing
+body, a {
+	color: $text-color
+}
+
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0
 }
 
-img {
-	width: 100%;
-}
-
 .h1, .h2, .h3, h1, h2, h3,
 h1 a, h2 a, h3 a {
-	color: $background-primary;
 	margin: 0 0 10px 0;
 	font-weight: 300;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover {
-	color: $hover-color;
 }
 
 .container {
-	max-width: $image-container-width
+	max-width: $container-width
 }
 
 .text-container {
@@ -92,7 +77,6 @@ a:hover, a:active {
 // Nav
 .header {
 	padding: 20px 0;
-	background: $background-primary
 }
 
 .header-inner {
@@ -100,71 +84,58 @@ a:hover, a:active {
 	width: 100%;
 	margin: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	height: 50px;
 }
 
 .header .logo {
-	color: #FFF;
-	letter-spacing: 3px;
-	opacity: 0.8;
-	transition: opacity 0.2s;
+	height: 30px
 }
 
-.header .logo:hover {
-	opacity: 1;
+.header-left {
+	flex: 1 1 0px;
+	text-align: start;
 }
 
-.header h2 {
-	margin-bottom: 0
+.header-center {
+	flex: 0 0 auto;
 }
 
-.nav-pills>li>a {
+.header-right {
+	flex: 1 1 0px;
+	text-align: end;
+}
+
+.nav-pills > li > a {
 	text-transform: uppercase;
-	font-size: 18px;
-	color: #FFF;
-	opacity: 0.8;
-	transition: opacity 0.2s
+	font-size: 12px;
+	transition: opacity 0.2s;
+	letter-spacing: 3px;
+	padding: 0 15px 0 0;
 }
 
 .nav > li > a.active,
 .nav > li > a:hover {
 	text-decoration: none;
-	color: #FFF;
 	background-color: inherit;
-	opacity: 1
+	opacity: 0.7
 }
 
 .header a {
-	color: #FFF
+	color: $text-color
 }
 
+.nav-social {
+	font-size: 22px !important
+}
 
 // Main content
 .main-content {
 	padding: 30px 0
 }
 
-
 // Footer content
-footer {
-}
-
-.footer-contact {
-	background-image: linear-gradient(-133deg,#99a3e8,#8fbbe4);
-	height: 200px;
-}
-
-.footer-social {
-	background: #27303b;
-	height: 100px;
-}
-
-.footer-copyright {
-	background: #1d262f;
-	padding: 10px;
-	color: #526173
-}
 
 
 // Home page
@@ -175,12 +146,10 @@ footer {
 }
 
 .home-container {
-	background: $background-primary;
 	height: calc(100vh - 105px);
 }
 
 .home-container h2 {
-	color: #FFF
 }
 
 
@@ -225,7 +194,6 @@ footer {
 	text-align: center;
   top: 40%;
   position: relative;
-	color: #FFF;
 }
 
 

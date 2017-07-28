@@ -6,28 +6,24 @@ None of these variable are being imported anywhere, they're just here for your c
 body {
   margin: 0; }
 
+body, a {
+  color: #1D1D1D; }
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-img {
-  width: 100%; }
-
 .h1, .h2, .h3, h1, h2, h3,
 h1 a, h2 a, h3 a {
-  color: #70B9B0;
   margin: 0 0 10px 0;
   font-weight: 300; }
 
-h1 a:hover, h2 a:hover, h3 a:hover {
-  color: #000000; }
-
 .container {
-  max-width: 1000px; }
+  max-width: 1160px; }
 
 .text-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto; }
 
 a:hover, a:active {
@@ -41,61 +37,52 @@ a:hover, a:active {
   text-align: center; }
 
 .header {
-  padding: 20px 0;
-  background: #70B9B0; }
+  padding: 20px 0; }
 
 .header-inner {
-  max-width: 1000px;
+  max-width: 1160px;
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  height: 50px; }
 
 .header .logo {
-  color: #FFF;
-  letter-spacing: 3px;
-  opacity: 0.8;
-  transition: opacity 0.2s; }
+  height: 30px; }
 
-.header .logo:hover {
-  opacity: 1; }
+.header-left {
+  flex: 1 1 0px;
+  text-align: start; }
 
-.header h2 {
-  margin-bottom: 0; }
+.header-center {
+  flex: 0 0 auto; }
+
+.header-right {
+  flex: 1 1 0px;
+  text-align: end; }
 
 .nav-pills > li > a {
   text-transform: uppercase;
-  font-size: 18px;
-  color: #FFF;
-  opacity: 0.8;
-  transition: opacity 0.2s; }
+  font-size: 12px;
+  transition: opacity 0.2s;
+  letter-spacing: 3px;
+  padding: 0 15px 0 0; }
 
 .nav > li > a.active,
 .nav > li > a:hover {
   text-decoration: none;
-  color: #FFF;
   background-color: inherit;
-  opacity: 1; }
+  opacity: 0.7; }
 
 .header a {
-  color: #FFF; }
+  color: #1D1D1D; }
+
+.nav-social {
+  font-size: 22px !important; }
 
 .main-content {
   padding: 30px 0; }
-
-.footer-contact {
-  background-image: linear-gradient(-133deg, #99a3e8, #8fbbe4);
-  height: 200px; }
-
-.footer-social {
-  background: #27303b;
-  height: 100px; }
-
-.footer-copyright {
-  background: #1d262f;
-  padding: 10px;
-  color: #526173; }
 
 .home-page {
   position: absolute;
@@ -103,11 +90,7 @@ a:hover, a:active {
   left: calc(50% - 300px); }
 
 .home-container {
-  background: #70B9B0;
   height: calc(100vh - 105px); }
-
-.home-container h2 {
-  color: #FFF; }
 
 .projects-page {
   margin-top: 50px; }
@@ -142,15 +125,14 @@ a:hover, a:active {
 .projects-link-box h3 {
   text-align: center;
   top: 40%;
-  position: relative;
-  color: #FFF; }
+  position: relative; }
 
 .project-details {
   text-align: center;
   margin: 50px auto; }
 
 .project-details div, .project-details img {
-  width: 600px;
+  width: 700px;
   margin: 0 auto 30px; }
 
 .project-details img:first-child {

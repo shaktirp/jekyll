@@ -1,22 +1,27 @@
 <div class="header-inner">
-  <h2>
-    <a href="{{ site.baseUrl }}/" class="logo">
-      {{ site.shortTitle }}
-    </a>
-  </h2>
-  <nav>
-    <ul class="nav nav-pills justify-center">
-    {% for nav_hash in site.nav %}
-      {% for nav_item in nav_hash %}
-      <li class="nav-item">
-        {% if page.active == nav_item[0] %}
-          <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link active">{{ nav_item[0] }}</a>
-        {% else %}
-          <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link">{{ nav_item[0] }}</a>
-        {% endif %}
-      </li>
+  <div class="header-left">
+    <nav>
+      <ul class="nav nav-pills">
+      {% for nav_hash in site.nav %}
+        {% for nav_item in nav_hash %}
+        <li class="nav-item">
+          {% if page.active == nav_item[0] %}
+            <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link active">{{ nav_item[0] }}</a>
+          {% else %}
+            <a href="{{ site.baseUrl }}{{ nav_item[1] }}" class="nav-link">{{ nav_item[0] }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-center">
+    <img src="/assets/logo/sr.png" class="logo"/>
+  </div>
+
+  <div class="header-right">
+    <i class="fa fa-linkedin-square nav-social" aria-hidden="true"></i>
+  </div>
 </div>

@@ -12,6 +12,7 @@ email: "" # This is my real email address. Please don't email me.
 # Internal nav
 nav:
   - Projects: "/projects/"
+  - Home: "/home/"
 
 social:
   - Facebook: "www.facebook.com"
