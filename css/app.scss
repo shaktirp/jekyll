@@ -12,6 +12,7 @@ body{
 }
 
 $text-color: #1D1D1D;
+$paragraph-text-color: rgba(29,29,29,0.7);
 
 // Some Style Variables
 
@@ -24,7 +25,7 @@ $mamabear: 769px;
 $papabear: 1140px;
 $monsterbear: 1300px;
 
-$font-size: 16px;
+$font-size: 14px;
 $font-family: Helvetica, sans-serif;
 $alt-font-family: monospace;
 $font-color: #555555;
@@ -35,10 +36,19 @@ body, a {
 	color: $text-color
 }
 
+p {
+	color: $paragraph-text-color
+}
+
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0
+}
+
+.h1, h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
 }
 
 .h1, .h2, .h3, h1, h2, h3,
@@ -56,7 +66,7 @@ h1 a:hover, h2 a:hover, h3 a:hover {
 
 .text-container {
 	max-width: $text-width;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 
 a:hover, a:active {
@@ -136,22 +146,42 @@ a:hover, a:active {
 }
 
 // Footer content
+.footer-container {
+	margin: 50px
+}
 
+.footer-social {
+	margin: 30px 0;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.footer-social i {
+	font-size: 20px
+}
+
+.footer-copyright {
+	margin: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
 
 // Home page
-.home-page {
-	position: absolute;
-  top: calc(50% - 60px);
-  left: calc(50% - 300px);
+.home-banner {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	content: "";
 }
 
-.home-container {
-	height: calc(100vh - 105px);
+.first-banner {
+	background-image: url('/assets/images/banner-1.png');
 }
 
-.home-container h2 {
+.second-banner {
+	background-image: url('/assets/images/banner-2.png');
 }
-
 
 // Project page
 .projects-page {
