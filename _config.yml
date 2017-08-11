@@ -1,21 +1,18 @@
 # Site settings
 title: Shakti Rajpurohit
 shortTitle: SR
-tagline: "Hi, I'm Shakti. This site is work in progress."
-url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+tagline: "Hi, I am Shakti and this is my personal website. Here, you can check out my projects and social profiles."
+url: "http://shakti.xyz"
 baseUrl: "" # /jekyll
-
-# Contact
-phone: "" # This is my real number. You should text me.
-email: "" # This is my real email address. Please don't email me.
 
 # Internal nav
 nav:
+  - Home: "/"
   - Projects: "/projects/"
-  - Home: "/home/"
 
 social:
-  - Facebook: "www.facebook.com"
-  - LinkedIn: "www.linkedin.com"
+  Facebook: "www.facebook.com"
+  LinkedIn: "www.linkedin.com"
+  Instagram: "www.Instagram.com"
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

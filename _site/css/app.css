@@ -19,12 +19,14 @@ ul {
 
 .h1, h1 {
   font-size: 40px;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  text-transform: uppercase; }
 
 .h1, .h2, .h3, h1, h2, h3,
 h1 a, h2 a, h3 a {
   margin: 0 0 10px 0;
-  font-weight: 300; }
+  font-weight: 300;
+  text-transform: uppercase; }
 
 .container {
   max-width: 1160px; }
@@ -137,22 +139,22 @@ a:hover, a:active {
   background-size: cover;
   margin-bottom: 50px; }
 
-.projects-link-box {
+.projects-link-box-container {
   height: calc(100% - 40px);
   width: calc(100% - 40px);
   opacity: 0;
   position: relative;
   top: 20px;
   left: 20px;
-  transition: opacity 0.3s ease-out; }
+  transition: opacity 0.2s ease-out; }
 
-.projects-container:hover .projects-link-box {
+.projects-container:hover .projects-link-box-container {
   opacity: 1;
-  background-color: rgba(112, 185, 176, 0.8); }
+  background-color: rgba(255, 255, 255, 0.9); }
 
-.projects-link-box h3 {
+.projects-link-box {
   text-align: center;
-  top: 40%;
+  top: 30%;
   position: relative; }
 
 .project-details {
