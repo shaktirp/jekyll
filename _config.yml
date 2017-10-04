@@ -3,7 +3,7 @@ title: Shakti Rajpurohit
 shortTitle: SR
 tagline: "Hi, I am Shakti and this is my personal website. Here, you can check out my projects and social profiles."
 url: "http://shakti.xyz"
-baseUrl: "" # /jekyll
+baseUrl: "/jekyll" # ""
 
 # Internal nav
 nav:
