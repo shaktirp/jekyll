@@ -11,6 +11,8 @@ body{
 	margin: 0;
 }
 
+$url: "{{ site.baseUrl }}";
+
 $text-color: #1D1D1D;
 $paragraph-text-color: rgba(29,29,29,0.7);
 
@@ -178,11 +180,11 @@ a:hover, a:active {
 }
 
 .first-banner {
-	background-image: url('/assets/images/banner-1.png');
+	background-image: url($url + '/assets/images/banner-1.png');
 }
 
 .second-banner {
-	background-image: url('/assets/images/banner-2.png');
+	background-image: url($url + '/assets/images/banner-2.png');
 }
 
 // Project page
